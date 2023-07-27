@@ -15,7 +15,7 @@ Usage:
 
 Note:
   The default output filename is the input with extension changed to '.png',
-  if the it already ends with '.png', then an extra '.png' is appended.
+  if it already ends with '.png', then an extra '.png' is appended.
 ";
 
   static void Main(string[] args) {
@@ -93,7 +93,7 @@ Note:
           using (var target = new Bitmap(width, height)) {
             using (var g = Graphics.FromImage(target)) {
               g.Clear(Color.Transparent);
-              g.DrawImage(image, 0, 0, target.Width, target.Height);
+              g.DrawImage(png, 0, 0, target.Width, target.Height);
             }
 
             target.Save(outfile, ImageFormat.Png);
