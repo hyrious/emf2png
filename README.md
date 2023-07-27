@@ -6,17 +6,12 @@ Convert an EMF (Enhanced Metafile) to PNG, allowing resizing.
 
 Windows 10+, or install [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework).
 
-### Optional Softwares
-
-- `rm.exe` from [Git\usr\bin\rm.exe](https://git-scm.com/),
-- `make.exe` from [GNU](https://gnu.org/software/make/), just run `scoop install make` if you have [scoop](https://scoop.sh/).
-
 ## Build
 
-If you have `rm.exe` and `make.exe` in your PATH, then simply run the Makefile:
+Run `build.cmd` in current folder:
 
 ```console
-make
+build
 ```
 
 ### Manual Steps
