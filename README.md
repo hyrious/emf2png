@@ -8,18 +8,21 @@ Windows 10+, or install [.NET Framework](https://dotnet.microsoft.com/en-us/down
 
 ## Build
 
-Run `build.cmd` in current folder:
+### .Net Framework
 
-```console
-build
-```
+Run `build.cmd` in current folder.
 
-### Manual Steps
+It will generate `emf2png.exe` at the root folder.
 
-1. Find `csc.exe` (the C# compiler) in your .NET Framework by running `make-csc.cmd`.
-2. Run `csc /nologo /o emf2png.cs` (append `/win32icon:icon.ico` to give it an icon).
+### .Net Core 7
 
-You will get an `emf2png.exe` in the current directory, just take it to anywhere you like.
+Open `emf2png.csproj` and press Ctrl+Shift+B to build it.
+
+It will generate `bin\Debug\net7.0\emf2png.exe`.
+
+> [!NOTE]
+> The .Net Core version seems fixed some bug in rendering some WMF files.
+> I have also uploaded the prebuilt Windows-x64 version of this tool in the [Releases](https://github.com/hyrious/emf2png/releases) page.
 
 ## Usage
 

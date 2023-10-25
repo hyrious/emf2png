@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "emf2png": {
+      "commandName": "Project",
+      "commandLineArgs": "a.wmf 1x"
+    }
+  }
+}
